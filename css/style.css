@@ -1,3 +1,76 @@
+*{
+    margin:0;
+}
 body{
-    background-color: FFF7F7;
+    background-color: #FFF7F7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navBar{
+    display:flex;
+    width:auto;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-self: flex-start;
+}
+
+.btnMenu{
+    background-color: var(--bordeaux);  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px; 
+    border-radius: 0px 0px 10px 0px;
+    border:none; 
+    box-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+.btnMenu img{
+    width:3vw;
+    cursor: pointer;
+}
+
+.logo{
+    background-image: url("../img/VinheriaAgnello_Logo.png");
+    background-size: cover;
+    width:7vw;
+    height:7vw;
+    margin-right: 3vw;
+}
+
+.searchBar{
+    display:flex;
+    column-gap: 2vw;
+    align-items: center;
+}
+.searchInput{
+    border-radius: 20px;
+    border: black solid 1px;
+    font-size:20px;
+    width: 20vw;
+    text-align: center;
+    box-shadow: 1px 2px rgba(0,0,0, 0.5);
+    font-family: Jaldi;
+    word-spacing: 3px;
+}
+
+.btnSearch{
+    border-radius: 100%;
+    background-color: var(--bordeaux);
+    border: none;
+    width: 5.5vh;
+    height: 5.5vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.btnSearch img{
+    width:15px;
+    cursor: pointer;
 }

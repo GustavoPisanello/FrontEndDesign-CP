@@ -1,0 +1,13 @@
+:root{
+    --bordeaux: #841B3A;
+}
+
+@font-face {
+    font-family: Jaldi;
+    src: url(../fonts/Jaldi/Jaldi-Regular.ttf);
+}
+
+@font-face {
+    font-family: JaldiBold;
+    src: url(../fonts/Jaldi/Jaldi-Bold.ttf);
+}
