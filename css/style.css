@@ -74,3 +74,9 @@ body{
     width:15px;
     cursor: pointer;
 }
+
+.carrossel {
+    border:2px solid black;
+    text-align: center;
+    margin: 1rem;
+}
