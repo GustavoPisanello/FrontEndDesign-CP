@@ -94,7 +94,7 @@ body{
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 3px;
+  margin: 3px 3px 3px 0;
   cursor: pointer;
 }
 
@@ -220,4 +220,20 @@ iframe {
 
 .produtos img:hover {
   transform: scale(1.1);
+}
+
+footer {
+  background-color: #591540;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+footer p {
+  color: white;
+  font-family: JaldiBold;
+  margin: 10px;
 }
