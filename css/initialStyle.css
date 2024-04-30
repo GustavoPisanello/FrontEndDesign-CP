@@ -1,0 +1,36 @@
+*{
+    margin: 0 auto;
+}
+
+body{
+    font-family: Jaldi;
+    color:white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.content{
+    background-color: var(--bordeaux);
+    width:fit-content;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: white;
+    display:block;
+}
+
+#btnSim{
+    background-color: black;
+    padding: 5px 30px;
+    margin-bottom:10px;
+}

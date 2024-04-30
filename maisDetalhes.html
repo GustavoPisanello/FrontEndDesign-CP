@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Detalhes</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/maisDetalhes.css">
+    <link rel="icon" href="img/VinheriaAgnello_Logo.png">
+</head>
+<body>
+    <section class="moreDetailscontainer">
+        <div class="content">
+            <div class="esquerda">
+                <div class="Logo">
+                    <img class="imgLogo" src="img/firstPress.webp" alt="Logo da vinheria">
+                    <div class="">
+                        <h1 class="">Vinhos First Press</h1>
+                        <p>First Press</p>
+                    </div> 
+                </div>
+                <div class="imgEPreco">
+                    <img class="imgVinho" src="img/Garrafa 1.png" alt="Um bom vinho da marca Santa Maria">
+                    <p class="precoVinho">R$ 55,90</p>
+                    <div class="linha"></div>
+                </div>
+
+            </div>
+            <div class="direita">
+                <div class="divXis">
+                    <a href="index.html"><img class="xis" src="img/xis.svg" alt="Voltar"></a>
+                </div>
+                <div class="tituloVinho">
+                    <h1 class="nomeVinho">Vinho branco First Press Chardonnay</h1>
+                    <p style="font-family: Jaldi; margin-left: 10px; font-weight: bold;">Vinho branco</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <p class="descricaoVinho">O vinho branco Chardonnay é uma ótima pedida para harmonização com queijos e frutos do mar.</p>
+                </div>
+                <div class="quantidade">
+                    <div class="cupomArea">
+                        <label class="lblCupom" for="cupom">Cupom </label>
+                        <input type="text" id="cupom" placeholder="Ex: AAAA0000">
+                    </div>
+                    <div class="qtdVinhos">
+                        <label class="lblCupom" for="qtd">Qtd</label>
+                        <input type="number" min="0" id="qtd" placeholder="Ex: 1">
+                    </div>
+                </div>
+                <h2 class="txtCombinacoes">Harmonizações</h2>
+                <div class="combinacoes">      
+                    <div class="combinacao">#Queijos</div>
+                    <div class="combinacao">#Frutos do mar</div>
+                    <div class="combinacao">#Massas</div>
+                </div>
+                <div class="divComprar">
+                    <button class="btnComprar" onClick="Comprar()">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
