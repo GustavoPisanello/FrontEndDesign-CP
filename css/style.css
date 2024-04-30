@@ -318,12 +318,14 @@ footer p {
   text-justify: auto;
 }
 
-.contato{
-  max-width: 1200px;
-  margin: 0 auto;
+#contato{
+ 
   display: flex;
   justify-content: center;
   border: 2px;
+  margin: 200px auto
+
+
 }
 
 form {
@@ -376,8 +378,19 @@ form {
   
 }
 
-h1{
+.formulario h1{
   display: flex;
   justify-content: center;
   
 }
+
+.textao h1{
+  display: flex;
+  justify-content: center;
+  font-size:35px;
+}
+
+.formulario{
+  margin: 40px auto;
+}
+
