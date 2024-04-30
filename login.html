@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agnello Vinheria</title>
+    <link rel="stylesheet" href="css/initialStyle.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="icon" href="img/VinheriaAgnello_Logo.png">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h2>Insira o seu login</h2>
+            </div>
+            <form id="login-form">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var login = document.getElementById('login').value;
+            var password = document.getElementById('password').value;
+            if (login === '1234' && password === '1234') {
+                window.location.href = 'index.html';
+            } else {
+                alert('Login ou senha incorretos');
+            }
+        });
+    </script>
+</body>
+</html>
