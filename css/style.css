@@ -14,6 +14,10 @@ section {
   margin: 0 10vh 0 10vh;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .navBar{
     display:flex;
     width:auto;
@@ -253,8 +257,41 @@ footer p {
   justify-content: center;
   align-items: center;
   border: 5px solid black;
+  min-height: auto;
 }
 
 #outros-produtos {
   margin-right: 5%;
+  border-style: none;
+}
+
+.produtos h2, .produtos p {
+  font-family: Italiana;
+  text-align: center;
+}
+
+.titulo-produto {
+  font-family: Italiana;
+}
+
+.container-produtos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#outros-produtos img {
+  border-bottom: 10px solid black;
+  min-height: 200px;
+}
+
+.container-produtos li {
+  margin: 50px;
+}
+
+.container-produtos p, .mais-produtos, .produto p, .produto h2 {
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
 }
