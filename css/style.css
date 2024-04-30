@@ -10,6 +10,10 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+section {
+  margin: 0 10vh 0 10vh;
+}
+
 .navBar{
     display:flex;
     width:auto;
@@ -208,7 +212,6 @@ iframe {
   border-radius: 5px;
   padding: 5px;
   transition: transform 0.5s;
-  background-color: ;
 }
 
 .produtos img:hover {
@@ -236,8 +239,22 @@ footer p {
   justify-content: center;
 }
 
-.produtos h2, p {
-  font-family: ;
+.produto img, .imagem-vinho {
+  background-color: #611427;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:  5px solid black;
 }
 
+.imagem-vinho img {
+  background-color: #611427;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+}
 
+#outros-produtos {
+  margin-right: 5%;
+}
