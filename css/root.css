@@ -11,3 +11,8 @@
     font-family: JaldiBold;
     src: url(../fonts/Jaldi/Jaldi-Bold.ttf);
 }
+
+@font-face {
+    font-family: Italiana;
+    src: url(../fonts/Italiana/Italiana-Regular.ttf);
+}

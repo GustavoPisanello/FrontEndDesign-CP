@@ -43,7 +43,7 @@
             </div>
             <div class="descricao">
                 <h2 class="subtitulo">A vinheria</h2>
-                <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum nihil, quaerat soluta magnam sequi aliquid nostrum quod repudiandae! Laudantium necessitatibus corporis perferendis harum nemo voluptatem quos provident quia quidem?</p>
+                <p class="paragrafo">Na Vinheria Agnello, mergulhe em uma experiência sensorial única, onde cada garrafa conta uma história rica em sabor e tradição. Nossa seleção cuidadosamente curada de vinhos premium é um convite para explorar as nuances do mundo dos vinhos, desde os clássicos renomados até as descobertas exclusivas de pequenos produtores. Localizada no coração da cidade, a Vinheria Agnello é mais do que uma loja de vinhos, é um destino para os amantes da enologia que buscam qualidade, variedade e expertise. Descubra a arte de apreciar o vinho conosco.</p>
             </div>
         </section>
 
@@ -88,7 +88,7 @@
         <div id="paisagem">
             <img src="img/Paisagem.png" alt="Pintura de paisagem" class="imagem-paisagem">
         </div>
-        <div>
+        <div class="container-produtos">
             <ul class="produtos mais-produtos">
                 <li class="produto">
                     <h2 class="nome-produto">Catena Malbec</h2>
@@ -96,7 +96,7 @@
                     <p class="preco-produto">R$ 179,90</p>
                 </li>
                 <li class="produto">
-                    <h2 class="nome-produto">Nóia Rosé</h2>
+                    <h2 class="nome-produto">Nóia Rosé</h2><br>
                     <img src="img/Garrafa 5.png" alt="Garrafa de vinho Nóia Rosé" class="imagem-vinho"><a href=""></a></img>
                     <p class="preco-produto">R$ 119,00</p>
                 </li>
@@ -110,11 +110,11 @@
                     <img src="img/Garrafa 7.png" alt="Garrafa de vinho Cabernet Sauvignon" class="imagem-vinho"><a href=""></a></img>
                     <p class="preco-produto">R$ 160,90</p>
                 </li>
-                <li id="outros-produtos">
-                    <img src="img/MaisProdutos.png" alt="Mais produtos">
-                    <p class="mais-produtos"></p>
-                </li>
             </ul>
+            <div id="outros-produtos">
+                <img src="img/MaisProdutos.png" alt="Mais produtos">
+                <p class="mais-produtos">Mais produtos</p>
+            </div>
         </div>
     </section>
     <section id="video">
@@ -126,15 +126,22 @@
         </div>
     </section>
     <section id="contato">
-        <div class="espaco-contato">
-            <h3 class="mensagem-contato"></h3>
+    <div class="divzona">
+        <div class="textao">
+            <h1 class="gdfc">Gostaria de falar conosco?</h1>
         </div>
-        <div class="contato">
-            <h4 class="mandar-mensagem"></h4>
-            <input type="text" name="nome" placeholder="Nome">
-            <input type="text" name="email" placeholder="Email">
-            <textarea name="Mensagem" id="" cols="30" rows="10"></textarea>
+        <div class="formulario">
+            <form>
+                <h1>Mande uma mensagem!</h1>
+                <input type="text" id="nome-contato" name="nome" placeholder="Nome">
+                <br>
+                <input type="email" id="email-contato" name="email" placeholder="Email">
+                <br>
+                <input type="text" id="msg" name="msg" placeholder="Digite sua mensagem">
+                <input type="submit" id="submit" name="submit">
+            </form>
         </div>
+    </div>
     </section>
     <footer>
         <div class="logo">
