@@ -331,7 +331,7 @@ footer p {
 form {
  background-color:white;
  width: 400px;
- height: 380px;px;
+ height: 380px;
  padding: 20px;
  border: 1px solid black;
  border-radius:30px;
@@ -348,7 +348,6 @@ form {
   height: 50px;
   width: 140px;
   background-color: #B9282C;
-  font-style;
   color: white;
   margin: 0 auto
  
@@ -364,7 +363,7 @@ form {
   
 }
 
-#inputs{
+#nome-contato, #email-contato{
   background-color: #FFF7F7;
   border-radius: 20px;
   height: 60px;
