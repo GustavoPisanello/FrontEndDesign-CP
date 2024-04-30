@@ -317,3 +317,67 @@ footer p {
   text-align: justify;
   text-justify: auto;
 }
+
+.contato{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border: 2px;
+}
+
+form {
+ background-color:white;
+ width: 400px;
+ height: 380px;px;
+ padding: 20px;
+ border: 1px solid black;
+ border-radius:30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+
+#submit{
+  border-radius: 20px;
+  height: 50px;
+  width: 140px;
+  background-color: #B9282C;
+  font-style;
+  color: white;
+  margin: 0 auto
+ 
+  
+  
+}
+
+#forms{
+  background-color: #FFF7F7;
+  border-radius: 20px;
+  height: 40px;
+  font-weight: bold;
+  
+}
+
+#inputs{
+  background-color: #FFF7F7;
+  border-radius: 20px;
+  height: 60px;
+  font-weight: bold;
+}
+#msg{
+  background-color: #FFF7F7;
+  border-radius: 20px;
+  height: 180px;
+  font-weight: bold;
+  
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  
+}
