@@ -240,4 +240,27 @@ footer p {
   font-family: ;
 }
 
+.contato{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+ background-color:yellow;
+ width: 400px;
+ height: 380px;px;
+ padding: 40px;
+ border-radius:30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+}
+
+#submit{
+  border-radius: 20px;
+  height: 35px;
+  width: 100px;
+}
 
