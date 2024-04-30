@@ -234,7 +234,10 @@ footer p {
 #paisagem {
   display: flex;
   justify-content: center;
+}
 
+.produtos h2, p {
+  font-family: ;
 }
 
 
