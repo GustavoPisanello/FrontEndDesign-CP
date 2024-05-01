@@ -22,9 +22,12 @@ function Comprar(){
             total = total.toString()
             total = total.replace(".", ",")
 
+            qty = qty.toString()
+
         alert(`Item(ns) adicionado(s) ao carrinho! O valor total ficou em: R$${total}.`)
 
         localStorage.setItem('valueText', total)
+
         window.location.replace("index.html")
     }
 
@@ -35,6 +38,7 @@ function mostraCarrinho(){
     
     let itemCarrinho = document.getElementById("itemCarrinho");
     let btnRemove = `<button class="removeItem" onClick="removeItem()"> <img class="imgDeleteItem" src="img/lixeira.png"></button>`
+    
     
     if (itemCarrinho.classList.contains("visivel")){
         itemCarrinho.classList.add("invisivel")
@@ -52,6 +56,7 @@ function mostraCarrinho(){
     }
     else{
         itemCarrinho.innerHTML = `Vinho FirstPress | Valor: R$${total} | ${btnRemove}`
+  
     }
 }
 

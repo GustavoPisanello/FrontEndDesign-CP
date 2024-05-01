@@ -385,9 +385,9 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-right: 60vmax;
   text-align: justify;
   text-justify: auto;
+  margin-bottom: 4rem;
 }
 
 #contato{
