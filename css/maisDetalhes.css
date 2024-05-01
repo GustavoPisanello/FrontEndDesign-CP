@@ -182,6 +182,7 @@ body{
     background-color: var(--bordeaux);
     font-weight: white;
     border-radius: 0.75rem;
+    cursor: pointer;
 }
 
 .txtCombinacoes{

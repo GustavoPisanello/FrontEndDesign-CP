@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Detalhes</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/maisDetalhes.css">
+    <link rel="icon" href="img/VinheriaAgnello_Logo.png">
+</head>
+<body>
+    <section class="moreDetailscontainer">
+        <div class="content">
+            <div class="esquerda">
+                <div class="Logo">
+                    <img class="imgLogo" src="img/noia.jpg" alt="Logo da vinheria">
+                    <div class="">
+                        <h1 class="">Vinhos Nóia</h1>
+                        <p>Nóia</p>
+                    </div> 
+                </div>
+                <div class="imgEPreco">
+                    <img class="imgVinho" src="img/Garrafa 5.png" alt="Um bom vinho da marca Nóia">
+                    <p class="precoVinho">R$ 119,00</p>
+                    <div class="linha"></div>
+                </div>
+
+            </div>
+            <div class="direita">
+                <div class="divXis">
+                    <a href="index.html"><img class="xis" src="img/xis.svg" alt="Voltar"></a>
+                </div>
+                <div class="tituloVinho">
+                    <h1 class="nomeVinho">Vinho Rosé Nóia</h1>
+                    <p style="font-family: Jaldi; margin-left: 10px; font-weight: bold;">Vinho rosé</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <p class="descricaoVinho">Este vinho foi inspirado, sonhado e desenhado a partir das castas Syrah e Touriga Nacional. A inspiração surge na magnifica paisagem das próprias vinhas, onde as videiras crescem e permitem produzir uvas de grande qualidade e com extraordinário potencial.</p>
+                </div>
+                <div class="quantidade">
+                    <div class="cupomArea">
+                        <label class="lblCupom" for="cupom">Cupom </label>
+                        <input type="text" id="cupom" placeholder="Ex: AAAA0000">
+                    </div>
+                    <div class="qtdVinhos">
+                        <label class="lblCupom" for="qtd">Qtd</label>
+                        <input type="number" min="0" id="qtd" placeholder="Ex: 1">
+                    </div>
+                </div>
+                <h2 class="txtCombinacoes">Harmonizações</h2>
+                <div class="combinacoes">      
+                    <div class="combinacao">#Queijos</div>
+                    <div class="combinacao">#Frutos do mar</div>
+                    <div class="combinacao">#Massas</div>
+                </div>
+                <div class="divComprar">
+                    <button class="btnComprar" onClick="Comprar()">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+           function Comprar(){
+    let cupom = document.getElementById("cupom").value
+    let qty = document.getElementById("qtd").value
+    let value = 119
+    let discount = 0
+    let result = qty * value
+    let total = 0
+
+    if (qty == 0){
+        alert("Nenhum item foi adicionado ao carrinho :(")
+    }
+    else{
+        if (cupom.toUpperCase() == "FIAP2024"){
+            discount = 0.1
+            total = result - (discount * result)
+        }
+        else{
+            total = result
+        }
+
+            total = total.toString()
+            total = total.replace(".", ",")
+
+        alert(`Item(ns) adicionado(s) ao carrinho! O valor total ficou em: R$${total}.`)
+
+        localStorage.setItem('valueText', total)
+        window.location.replace("index.html")
+    }
+
+    
+}
+
+function mostraCarrinho(){
+    
+    let itemCarrinho = document.getElementById("itemCarrinho");
+    let btnRemove = `<button class="removeItem" onClick="removeItem()"> <img class="imgDeleteItem" src="img/lixeira.png"></button>`
+    
+    if (itemCarrinho.classList.contains("visivel")){
+        itemCarrinho.classList.add("invisivel")
+        itemCarrinho.classList.remove("visivel")
+        }
+    else{
+        itemCarrinho.classList.add("visivel")
+        itemCarrinho.classList.remove("invisivel")
+    }
+
+    let total = localStorage.getItem('valueText')
+
+    if(total == 0){
+        itemCarrinho.innerHTML = `Você ainda não possui itens no carrinho...`
+    }
+    else{
+        itemCarrinho.innerHTML = `Vinho FirstPress | Valor: R$${total} | ${btnRemove}`
+    }
+}
+
+function removeItem(){
+    localStorage.setItem('valueText', 0)
+    location.reload()
+}
+
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('nome-contato');
+  const email = document.getElementById('email-contato');
+  const message = document.getElementById('msg');
+
+  if (name.value && email.value && message.value) {
+    alert('Mensagem enviada com sucesso');
+    name.value = '';
+    email.value = '';
+    message.value = '';
+  } else {
+    alert('Preencha todos os campos');
+  }
+});
+    </script>
+</body>
+</html>
